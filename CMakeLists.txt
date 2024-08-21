@@ -3,8 +3,8 @@ project(OpenSimplexNoise VERSION 1.0.0 LANGUAGES C)
 
 add_library(
     OpenSimplexNoise
-    open-simplex-noise.h
+    include/open-simplex-noise.h
     open-simplex-noise.c
 )
 
-target_include_directories(OpenSimplexNoise PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
+target_include_directories(OpenSimplexNoise PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include")
